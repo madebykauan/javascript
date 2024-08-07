@@ -9,5 +9,15 @@ body{
     color: #556B2F;
     text-shadow: 5px 5px 3px #363636;
   }
-    
+section{
+  background-color:#556B2F;
+  width: 300px;
+  margin:auto;
+  border-radius: 22px;
+  box-shadow: 5px 5px 5px #363636;
+}
+    footer{
+    color: #556B2F;
+    text-shadow: 5px 5px 3px #363636;
+  }
   
