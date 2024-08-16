@@ -16,6 +16,14 @@ section{
   border-radius: 22px;
   box-shadow: 5px 5px 5px #363636;
 }
+
+img{
+  width: 100%
+  max-width: 100px;
+  border-radius: 20%
+  box-sizing: border-box;
+}
+
     footer{
     color: #556B2F;
   }
