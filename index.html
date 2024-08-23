@@ -1,19 +1,26 @@
-<!DOCTYPE HTML>
-<HTML lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"content= width=device-width initial scale:1.0">
-  <title> oiiiiiiiii </title>
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-  <body>
+<body onload="carregar()">
     <header>
-      <h1>A MORENA TA VIVA</h1>
-      </header>
+        <h1>Maikley Dieferson do Senhor</h1>
+    </header>
     <section>
-      <div id="item1">te amo jao moreno</div>
+        <div id="diaSemana">
+            <label for="dia"> Digite o dia da semana:</label>
+            <input type="text" id="dia">
+            <button onclick="verificarDia()">Verificar</button>
+        </div>
+        <div id="respostaDia" style="margin-top: 20px; font-size: 20px;"></div>
     </section>
-    <footer>&copy; Atividade Javascript 01</footer>
-    <script> src="script.js"></script>
-  </body>
-</HTML>
+    <footer>
+        <p>&copy; Atividade Javascript</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
