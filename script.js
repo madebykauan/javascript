@@ -23,7 +23,7 @@ function calcularTabuada() {
 }
 
 //adivinhar
-let numeroSecreto = Math.floor(Math.random() * 10) + 1; 
+let numeroSecreto = Math.floor(Math.random() * 100) + 1; 
 
 function adivinharNumero() {
   let tentativa = parseInt(document.getElementById("numeroJogo").value);
