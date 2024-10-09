@@ -1,54 +1,59 @@
-/* Estilo para o fundo e textos */
+/* Estilo geral do corpo */
 body {
     background-color: #f5f5dc; /* Fundo bege */
     font-family: Arial, sans-serif;
     color: #556b2f; /* Verde musgo */
-    text-align: center;
+    margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 /* Cabeçalhos */
 h1 {
-    color: #6b8e23; /* Verde musgo escuro */
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #556b2f; /* Verde musgo */
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-/* Estilo para o parágrafo */
+/* Parágrafos */
 p {
     font-size: 18px;
     color: #556b2f;
 }
 
-/* Estilo dos inputs */
+/* Caixa de entrada de texto */
 input[type="text"] {
     padding: 10px;
-    border: 2px solid #6b8e23;
+    border: 2px solid #556b2f;
     border-radius: 5px;
-    width: 100px;
+    width: 150px;
     font-size: 16px;
-    color: #556b2f;
-    background-color: #fff;
     margin-bottom: 10px;
 }
 
-/* Estilo dos botões */
+/* Botões */
 button {
     padding: 10px 20px;
-    background-color: #6b8e23;
-    color: white;
+    background-color: #556b2f;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #556b2f; /* Tom mais escuro ao passar o mouse */
+    background-color: #6b8e23; /* Tom mais claro ao passar o mouse */
 }
 
-/* Espaçamento entre seções */
+/* Estilo para os resultados */
+#resultadoRegressiva, #resultadoTabuada, #resultadoJogo {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #556b2f;
+}
+
+/* Ajuste de margem entre as seções */
 div {
     margin-bottom: 20px;
 }
