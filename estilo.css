@@ -1,2 +1,54 @@
+/* Estilo para o fundo e textos */
+body {
+    background-color: #f5f5dc; /* Fundo bege */
+    font-family: Arial, sans-serif;
+    color: #556b2f; /* Verde musgo */
+    text-align: center;
+    padding: 20px;
+}
 
-background color: green
+/* Cabeçalhos */
+h1 {
+    color: #6b8e23; /* Verde musgo escuro */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o parágrafo */
+p {
+    font-size: 18px;
+    color: #556b2f;
+}
+
+/* Estilo dos inputs */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #6b8e23;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 16px;
+    color: #556b2f;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    background-color: #6b8e23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #556b2f; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Espaçamento entre seções */
+div {
+    margin-bottom: 20px;
+}
