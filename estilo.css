@@ -1,59 +1,44 @@
-/* Estilo geral do corpo */
-body {
-    background-color: #f5f5dc; /* Fundo bege */
-    font-family: Arial, sans-serif;
-    color: #556b2f; /* Verde musgo */
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Ímpares de 1 a 20</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f5f5dc; /* Bege */
+            color: #556b2f; /* Verde musgo */
+        }
 
-/* Cabeçalhos */
-h1 {
-    color: #556b2f; /* Verde musgo */
-    font-size: 28px;
-    margin-bottom: 15px;
-}
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
 
-/* Parágrafos */
-p {
-    font-size: 18px;
-    color: #556b2f;
-}
+        #resultado {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Números Ímpares de 1 a 20</h1>
+    <div id="resultado"></div>
 
-/* Caixa de entrada de texto */
-input[type="text"] {
-    padding: 10px;
-    border: 2px solid #556b2f;
-    border-radius: 5px;
-    width: 150px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+    <script>
+        const resultadoDiv = document.getElementById("resultado");
+        let resultado = '';
 
-/* Botões */
-button {
-    padding: 10px 20px;
-    background-color: #556b2f;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 !== 0) {
+                resultado += i + "<br>";
+            }
+        }
 
-button:hover {
-    background-color: #6b8e23; /* Tom mais claro ao passar o mouse */
-}
-
-/* Estilo para os resultados */
-#resultadoRegressiva, #resultadoTabuada, #resultadoJogo {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #556b2f;
-}
-
-/* Ajuste de margem entre as seções */
-div {
-    margin-bottom: 20px;
-}
+        resultadoDiv.innerHTML = resultado;
+    </script>
+</body>
+</html>
