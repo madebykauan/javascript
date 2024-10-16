@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Atividade 3 pontos</title>
-    <meta charset="utf-8">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="estilo.css">
-  </head>
-  <body>
-       
-      <div class="contagem"></div>
-      <h1>Contagem regressiva</h1>
-      <p>Digite um número para começar a contagem regressiva</p>
-      <input type="text" id="numeroRegressiva">
-      <button onclick="contarRegressiva()">Enviar</button>
-      <p id="resultadoRegressiva"></p>
-      <br>
-      
-      <div class="tabuada"></div>
-      <h1>Tabuada</h1>
-      <p>Digite um número de 1 a 10, para mostrar a tabuada</p>
-      <input type="text" id="numeroTabuada">
-      <button onclick="calcularTabuada()">Enviar</button>
-      <p id="resultadoTabuada"></p>
-      <br>
-      
-      <div class="advinhar"></div>
-      <h1>Jogo: Adivinhe o número</h1>
-      <p>Tente adivinhar o número secreto de 1 a 100</p>
-      <input type="text" id="numeroJogo">
-      <button onclick="adivinharNumero()">Enviar</button>
-      <button onclick="gerarNovoNumero()">Gerar um novo numero</button>
-      <p id="resultadoJogo"></p>
-      <br>
-    
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Ímpares de 1 a 20</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Números Ímpares de 1 a 20</h1>
+    <div id="resultado"></div>
+
+    <script>
+        const resultadoDiv = document.getElementById("resultado");
+        let resultado = '';
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 !== 0) {
+                resultado += i + "<br>";
+            }
+        }
+
+        resultadoDiv.innerHTML = resultado;
+    </script>
+</body>
 </html>
