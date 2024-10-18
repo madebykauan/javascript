@@ -3,34 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Números Ímpares de 1 a 20</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin-top: 50px;
-            text-align: left; 
-            margin-left: 20px;
-        }
-        h1 {
-            font-size: 24px; 
-        }
-    </style>
+    <title>Verificação de Idade e Fibonacci</title>
+    <script src="script.js" defer></script> 
 </head>
+
 <body>
-    <h1>Números Ímpares de 1 a 20</h1>
-    <div id="resultado"></div>
+ <section>
+     <h1>Digite sua idade:</h1>
+     <input type="text" id="nome" placeholder="Digite seu nome">
+     <input type="number" id="idade" placeholder="Digite sua idade">
+     <button onclick="verificarIdade()">Enviar</button>
+     <div id="erro"></div> 
+     <div id="resultado"></div>
+    </section>
 
-    <script>
-        const resultadoDiv = document.getElementById("resultado");
-        let resultado = '';
-
-        for (let i = 1; i <= 20; i++) {
-            if (i % 2 !== 0) {
-                resultado += i + "<br>";
-            }
-        }
-
-        resultadoDiv.innerHTML = resultado;
-    </script>
+ 
+  <section>
+     <h1>Sequência de Fibonacci</h1>
+     <p id="fibonacci-sequence"></p> 
+  </section>
 </body>
 </html>
