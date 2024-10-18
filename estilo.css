@@ -1,1 +1,33 @@
+body {
+    background-color: beige;
+    color: #556B2F;
+    font-family: Arial, sans-serif;
+}
 
+h1 {
+    color: #556B2F;
+}
+
+input {
+    border: 1px solid #556B2F;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #556B2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6B8E23;
+}
+
+#resultado, #erro {
+    margin-top: 20px;
+    font-size: 18px;
+}
