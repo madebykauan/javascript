@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média Escolar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5dc;
+            color: #556b2f;
+        }
+        h1 {
+            color: #556b2f;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #556b2f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6b8e23;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Média Escolar</h1>
+    <form id="mediaForm">
+        <label for="nota1">1º:</label>
+        <input type="number" id="nota1" min="0" max="100" step="1" required>
+        
+        <label for="nota2">2º:</label>
+        <input type="number" id="nota2" min="0" max="100" step="1" required>
+        
+        <label for="nota3">3º:</label>
+        <input type="number" id="nota3" min="0" max="100" step="1" required>
+        
+        <button type="button" onclick="calcularMedia()">Calcular Média</button>
+    </form>
+    <div class="resultado" id="resultado"></div>
 
+    <script>
+        function calcularMedia() {
+            const nota1 = parseFloat(document.getElementById('nota1').value);
+            const nota2 = parseFloat(document.getElementById('nota2').value);
+            const nota3 = parseFloat(document.getElementById('nota3').value);
+
+            if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+                document.getElementById('resultado').innerHTML = 
+                    "<span style='color: red;'>Por favor, insira todas as notas.</span>";
+                return;
+            }
+
+            const soma = nota1 + nota2 + nota3;
+            const status = (nota1 >= 60 && nota2 >= 60 && nota3 >= 60 && soma >= 180) ? "Aprovado" : "Reprovado";
+
+            document.getElementById('resultado').innerHTML = 
+                Soma das Notas: <span style="color: #556b2f;">${soma}</span><br>Status: <strong>${status}</strong>;
+        }
+    </script>
+</body>
+</html>
